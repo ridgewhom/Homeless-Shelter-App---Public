@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types_array">
+        <item>General</item>
+        <item>Admin</item>
+    </string-array>
+    <string-array name="genders">
+        <item>Any Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="ages">
+        <item>Anyone</item>
+        <item>Families with newborns</item>
+        <item>Children</item>
+        <item>Young Adults</item>
+    </string-array>
+
+</resources>

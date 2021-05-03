@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gatech.fourhorse.cs2340Project.CommandsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ban_button"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="62dp"
+                android:layout_weight="1"
+                android:background="#DD2222"
+                android:text="BAN USER"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="209dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="36dp"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <EditText
+                    android:id="@+id/ban_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="131dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Enter User To Modify"
+                    android:inputType="textPersonName"
+                    tools:layout_editor_absoluteX="90dp"
+                    tools:layout_editor_absoluteY="140dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/unban_Button"
+                android:layout_width="108dp"
+                android:layout_height="62dp"
+                android:layout_alignBaseline="@+id/ban_button"
+                android:layout_alignBottom="@+id/ban_button"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:background="#00DD00"
+                android:text="unBan_User"
+                app:layout_constraintEnd_toStartOf="@+id/ban_button"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="202dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

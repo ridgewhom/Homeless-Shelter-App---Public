@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gatech.fourhorse.cs2340Project.ReservationActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/reserve_or_txt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Reserve Or Cancel Beds"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/reserve_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#AAFFFF"
+                android:text="Reserve"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+            <EditText
+                android:id="@+id/num_reserve"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:hint="Number To Reserve"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="81dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFAAAA"
+                android:text="Cancel "
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="203dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/vacancies_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:text="Vacancies"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="61dp" />
+
+            <TextView
+                android:id="@+id/num_vacancies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".67"
+                android:text="XYZ"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                tools:layout_editor_absoluteX="208dp"
+                tools:layout_editor_absoluteY="61dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/total_beds_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:text="Total Beds"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="413dp" />
+
+            <TextView
+                android:id="@+id/num_beds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".67"
+                android:text="XYZ"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                tools:layout_editor_absoluteX="252dp"
+                tools:layout_editor_absoluteY="413dp" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
